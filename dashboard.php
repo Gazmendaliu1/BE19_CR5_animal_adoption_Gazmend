@@ -26,7 +26,7 @@
     if(mysqli_num_rows($resultUsers) > 0){
         while($userRow = mysqli_fetch_assoc($resultUsers)){
             $layoutUser .= "<div>
-            <div class='card ' style='width: 8rem ; row row-col-lg-4row-col-md-3 row-col-sm-2 row-col-xs-1'>
+            <div class='card mt-2' style='width: 8rem ; row row-col-lg-4row-col-md-3 row-col-sm-2 row-col-xs-1 '>
                 <img src='pictures/{$userRow["picture"]}' class='card-img-top' alt='...'>
                 <div class='card-body'>
                 <h5 class='card-title'>{$userRow["first_name"]} {$userRow["last_name"]}</h5>
@@ -48,7 +48,7 @@
 
     if (mysqli_num_rows($resultProduct) > 0) {
         while($rowProduct = mysqli_fetch_assoc($resultProduct)){
-                $layout .= "<div class='card container  containerr  row row-col-lg-4 row-col-md-3 row-col-sm-2 row-col-xs-1 ms-5' 
+                $layout .= "<div class='card container  containerr mt-3  row row-col-lg-4 row-col-md-3 row-col-sm-2 row-col-xs-1 ms-5' 
                 style='width: 20rem;'>
                 <br>
                <img src='../pictures/{$rowProduct["picture"]}' class='card-img-top ' alt='...'>
