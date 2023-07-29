@@ -26,8 +26,8 @@
 
     if (mysqli_num_rows($resultProduct) > 0) {
         while($rowProduct = mysqli_fetch_assoc($resultProduct)){
-                $layout .= "<div class='card container  containerr  row row-col-lg-4 row-col-md-3 row-col-sm-2 row-col-xs-1 ms-5' 
-                 style='width: 20rem;'>
+                $layout .= "<div class='card container  ms-5 mt-3 mx-auto  row row-col-lg-4 row-col-md-3 row-col-sm-2 row-col-xs-1 ' 
+                style='width: 20rem;'>
                  <br>
                 <img src='../pictures/{$rowProduct["picture"]}' class='card-img-top ' alt='...'>
                 <div class='card-body'>
